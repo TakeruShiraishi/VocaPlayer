@@ -23,4 +23,4 @@ I would like to help you to make the elaborate but miscellaneous Englich vocabul
 
 ## Author
 
-[tcnksm](https://github.com/TakeruShiraishi)
+[TakeruShiraishi](https://github.com/TakeruShiraishi)
