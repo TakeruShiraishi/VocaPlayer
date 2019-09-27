@@ -17,12 +17,12 @@ vocabulary_test_player
 ## Demo
 
 ## Requirement
-python3.5  
-other
+python3.x  
+ReportLab
 
 ## Licence
 
-[MIT]()
+
 
 ## Author
 
