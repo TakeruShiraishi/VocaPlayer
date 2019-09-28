@@ -20,8 +20,9 @@ VocaPlayer
 python3.x  
 ReportLab
 
-## Licence
+## Lisence
 
+ReportLabがBSDライセンスであるため、私もBSDライセンスです。
 
 
 ## Author
