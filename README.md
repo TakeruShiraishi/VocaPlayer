@@ -1,4 +1,4 @@
-vocabulary_test_player
+VocaPlayer
 ====
 
 ## Description
