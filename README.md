@@ -23,7 +23,7 @@ ReportLab
 
 ## License
 
-ReportLabがBSDライセンスであるため、VocaPlayerもBSDライセンスです。
+BSDライセンスを採用します。
 
 
 ## Author
