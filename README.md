@@ -12,7 +12,7 @@ VocaPlayer
 ## デモンストレーション
 
 ## ダウンロードする必要があるもの
-[python3.x](https://www.python.org/) 
+[python3.x](https://www.python.org/)  
 [ReportLab](https://www.reportlab.com/)
 
 ## Author
