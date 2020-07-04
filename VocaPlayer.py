@@ -85,7 +85,6 @@ class ListData:
 
 
 def writeContent(data,savefilename):
-
     header = [['Vocabulary_test','Name:','Point:']]
     header[0] = list(map(listdata.setParagraph, header[0]))
     head = Table(header,colWidths=60*mm)
@@ -93,7 +92,6 @@ def writeContent(data,savefilename):
                     ("ALIGN", (0,0), (-1,-1), "LEFT"),
                     ('GRID', (0,0), (-1,-1), 0.25, colors.black),
                     ])
-
     for i in range(len(data)):
         data[i] = list(map(listdata.setParagraph, data[i]))
     table = Table(data, colWidths=80*mm)
@@ -101,29 +99,24 @@ def writeContent(data,savefilename):
                     ("ALIGN", (0,0), (-1,-1), "LEFT"),
                     ('GRID', (0,0), (-1,-1), 0.25, colors.black),
                     ])
-
     doc = SimpleDocTemplate(savefilename)
     doc.build([head,Spacer(1,5*mm),table])
 
 
 def controller():
-
     filetype=[("pdf","*.pdf")]   
     savepath = filedialog.asksaveasfilename(initialdir=".",filetypes=filetype)
     savepath = os.path.splitext(savepath)
     savefilenamealldata = savepath[0] + '_all.pdf'
     savefilenamehidecol0 = savepath[0] + '_hidecol0.pdf'
     savefilenamehidecol1 = savepath[0] + '_hidecol1.pdf'
-
+    
     n = quiz_size.get()
     print(n)
     listdata.setSelectData(n)
-
     alldata = listdata.selectdata
     hidecol0 = listdata.getHideData(0)
     hidecol1 = listdata.getHideData(1)
-
-
     writeContent(alldata,savefilenamealldata)
     writeContent(hidecol0,savefilenamehidecol0)
     writeContent(hidecol1,savefilenamehidecol1)
